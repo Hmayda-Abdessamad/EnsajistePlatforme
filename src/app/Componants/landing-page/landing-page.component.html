@@ -1,1 +1,328 @@
-<p>landing-page works!</p>
+
+<div class="d-flex w-100 h-100 flex-column overflow-y-scroll">
+
+  <div class=" container w-100 ">
+    <nav class="navbar  navbar-dark bg-dark mb-5  navbar-expand-lg fixed-top d-flex justify-content-around ">
+
+      <a class="navbar-brand text-white fontsize  fw-bold px-3 " href="#home">AppInScience</a>
+
+      <button class="navbar-toggler bg-white-50 bg-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header  text-center">
+          <h5 class="offcanvas-title  fs-4 fw-medium text-dark" id="offcanvasDarkNavbarLabel" >AIS</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+          <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+            <li class="nav-item mx-5">
+              <a class="nav-link active  fs-5 fw-medium text-white" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item mx-5">
+              <a class="nav-link active  fs-5 fw-medium text-white" aria-current="page" href="#about"> About US</a>
+            </li>
+
+            <li class="nav-item mx-5">
+              <a class="nav-link fs-5 fw-medium text-white" href="#process">Our Process</a>
+            </li>
+            <button class=" nav-item btn btn-primary rounded-5  mx-5">Login</button>
+          </ul>
+
+
+
+        </div>
+      </div>
+
+    </nav>
+  </div>
+
+  <div class=" container-fluid w-100 bg-black ">
+    <div class="row" id="home">
+      <div class="video-container">
+        <video src="assets/videos/RACATHON%203.0.mov" [autoplay]="true" [muted]="true" class="opacity-75 w-100 rounded-4"></video>
+        <div class="text-overlay">
+          <h2 class="text-white fw-lighter fontsize" id="typing-text"></h2>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class=" container-fluid w-100 about" id="about">
+    <div class="row p-5 " >
+      <h2 class="fw-bolder p-4 title text-center text-white ">About US</h2>
+
+      <ul class="nav nav-underline justify-content-center " id="myTab" role="tablist">
+        <li class="nav-item mx-3">
+          <a class="nav-link  active text-white fw-semibold" id="who-we-are-tab" data-bs-toggle="tab" href="#who-we-are" role="tab" aria-controls="who-we-are" aria-selected="true">Who We Are?</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link text-white fw-semibold" id="what-we-do-tab" data-bs-toggle="tab" href="#what-we-do" role="tab" aria-controls="what-we-do" aria-selected="false">What We Do?</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link text-white fw-semibold" id="current-team-tab" data-bs-toggle="tab" href="#current-team" role="tab" aria-controls="current-team" aria-selected="false">Current Team</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link text-white  fw-semibold" id="map-tab" data-bs-toggle="tab" href="#map" role="tab" aria-controls="map" aria-selected="false">Get in touch</a>
+        </li>
+      </ul>
+
+      <div class="tab-content bg-gradient  rounded-4 " id="myTabContent">
+        <div class="tab-pane  active " id="who-we-are" role="tabpanel" aria-labelledby="who-we-are-tab">
+          <div class="d-flex flex-row">
+
+            <div class=" col-lg-3 col-sm-4 mx-3" >
+              <img src="./assets/images/logo.png" class="w-100 mx-3" alt="AIS Logo">
+            </div>
+
+            <div class=" col-lg-7 col-sm-8 d-flex flex-column justify-content-center align-items-center text-center mx-3 py-3 px-5">
+              <p class="fw-semibold fontsize text-white m-lg-5" style="text-align: justify-all">We are an IT club created by engineering students from the National School of Applied Sciences of El Jadida . </p>
+              <p class="fw-semibold fontsize text-white m-lg-5" style="text-align: justify-all">Our club has evolved very quickly since its beginnings in 2013, and demonstrated innovation in combining major events and projects to the local and national level.</p>
+            </div>
+
+          </div>
+
+
+        </div>
+        <div class="tab-pane fade p-4 col-lg-8 col-md-8 col-sm-12 offset-lg-2 offset-md-2 " id="what-we-do" role="tabpanel" aria-labelledby="what-we-do-tab">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="../../../assets/images/coWorking.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="tab-pane fade p-4 col-lg-8 col-md-8 col-sm-12 offset-lg-2 offset-md-2 " id="current-team" role="tabpanel" aria-labelledby="current-team-tab">
+          <div id="carouselExampleDark2" class="carousel carousel-dark slide">
+
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="card_box">
+                  <div class="img_box">
+                    <img class="img-fluid" src="../../../assets/images/team1.png" alt="">
+                  </div>
+                  <div class="text_box">
+                    <h4>Arun Chandra</h4>
+                    <p>Senior CEO</p>
+                  </div>
+                  <ul class="card_social">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                  </ul>
+                </div>
+
+              </div>
+              <div class="carousel-item " data-bs-interval="20000">
+                <div class="card_box">
+                  <div class="img_box">
+                    <img class="img-fluid" src="../../../assets/images/team2.png" alt="">
+                  </div>
+                  <div class="text_box">
+                    <h4>Arun Chandra</h4>
+                    <p>Senior CEO</p>
+                  </div>
+                  <ul class="card_social">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                  </ul>
+                </div>
+
+              </div>
+              <div class="carousel-item " data-bs-interval="30000">
+                <div class="card_box">
+                  <div class="img_box">
+                    <img class="img-fluid" src="../../../assets/images/team3.png" alt="">
+                  </div>
+                  <div class="text_box">
+                    <h4>Arun Chandra</h4>
+                    <p>Senior CEO</p>
+                  </div>
+                  <ul class="card_social">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                  </ul>
+                </div>
+
+              </div>
+              <div class="carousel-item " data-bs-interval="40000">
+                <div class="card_box">
+                  <div class="img_box">
+                    <img class="img-fluid" src="../../../assets/images/team4.png" alt="">
+                  </div>
+                  <div class="text_box">
+                    <h4>Arun Chandra</h4>
+                    <p>Senior CEO</p>
+                  </div>
+                  <ul class="card_social">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="tab-pane fade p-4 col-lg-8 col-md-8 col-sm-12 offset-lg-2 offset-md-2 " id="map" role="tabpanel" aria-labelledby="Localisation">
+
+          <div class="row">
+            <iframe class="col-6" src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d106770.89719100721!2d-8.475311!3d33.251029!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m5!1s0xda91dc4c0413d23%3A0xc8dbb36f4b2d2cbc!2sNational%20School%20of%20Applied%20Sciences%20-%20al-Jadida%2C%207H28%2BC96%2C%20El%20Jadida!3m2!1d33.2510353!2d-8.4341116!4m0!5e0!3m2!1sen!2sma!4v1696108355009!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="col-6 d-flex  flex-column justify-content-center align-items-center">
+              <h4 class="mb-3 text-white">Head office</h4>
+              <p class="text-white"><i class="fa-solid fa-location-dot"></i> 7H28+C96, El Jadida</p>
+              <p class="d-flex align-items-center mb-1">
+                <span class="me-2 text-white fs-3"><i class="fa-solid fa-phone-volume"></i></span>
+                <a href="tel: 305-240-9671" class="site-footer-link text-white">305-240-9671</a>
+              </p>
+
+              <p class="d-flex align-items-center text-white">
+                <span class="me-2"><i class="fa-solid fa-envelope-circle-check"></i></span>
+                <a href="mailto:info@company.com" class="site-footer-link text-white">
+                  info@company.com
+                </a>
+              </p>
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <section style="background-color: #F0F2F5;" id="process">
+    <div class="container py-5">
+      <div class="main-timeline-2">
+        <div class="timeline-2 left-2">
+          <div class="card">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(135).webp" class="card-img-top"
+                 alt="Responsive image">
+            <div class="card-body p-4">
+              <h4 class="fw-bold mb-4">Ut enim ad minim veniam</h4>
+              <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2017</p>
+              <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-2 right-2">
+          <div class="card">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(129).webp" class="card-img-top"
+                 alt="Responsive image">
+            <div class="card-body p-4">
+              <h4 class="fw-bold mb-4">Duis aute irure dolor</h4>
+              <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2016</p>
+              <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+                sequi nesciunt.</p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-2 left-2">
+          <div class="card">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(131).webp" class="card-img-top"
+                 alt="Responsive image">
+            <div class="card-body p-4">
+              <h4 class="fw-bold mb-4">Sed ut nihil unde omnis</h4>
+              <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2015</p>
+              <p class="mb-0">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
+                reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui
+                dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-2 right-2">
+          <div class="card">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(125).webp" class="card-img-top"
+                 alt="Responsive image">
+            <div class="card-body p-4">
+              <h4 class="fw-bold mb-4"> Quis autem vel eum voluptate</h4>
+              <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2014</p>
+              <p class="mb-0">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi,
+                id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-2 left-2">
+          <div class="card">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(144).webp" class="card-img-top"
+                 alt="Responsive image">
+            <div class="card-body p-4">
+              <h4 class="fw-bold mb-4">Mussum ipsum cacilds</h4>
+              <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2013</p>
+              <p class="mb-0">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus
+                saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum
+                hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut
+                perferendis doloribus asperiores repellat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
